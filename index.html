@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Around the World Travel Guide</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+  <section class="hero is-info is-small">
+    <div class="hero-body">
+      <p id="currencyTitle" class="title is-2 animate__animated animate__flip">
+        Around the World
+      </p>
+      <p class="title is-4 centered">Travel Guide</p>
+      <div class="centered">
+        <!--    Buttons Here -->
+
+        <a class="button is-info" href="index.html">Home</a>
+        <div class="divider"></div>
+        <a class="button is-info" href="currency.html">Currency</a>
+        <div class="divider"></div>
+        <a class="button is-info" href="faqPage.html">FAQ</a>
+
+
+      </div>
+    </div>
+  </section>
+  <br>
+  <section class="homeMainSection">
+    <div id="centerImage">
+      <figure>
+        <img id="destinationImg"
+          src="https://www.thefactsite.com/wp-content/uploads/2017/02/top-ten-travel-destinations.jpg">
+      </figure>
+    </div>
+    <!-- Dropdown Menus -->
+    <div class="destinationButtons">
+      <select id="continentDropdown">
+        <option selected> Select a continent!</option>
+        <option value="North America" class="dropdown-item">North America</option>
+        <option value="South America" class="dropdown-item">South America</option>
+        <option value="Europe" class="dropdown-item">Europe</option>
+        <option value="Asia" class="dropdown-item">Asia</option>
+        <option value="Africa" class="dropdown-item">Africa</option>
+        <option value="Oceania" class="dropdown-item">Oceania</option>
+      </select>
+
+      <select id="landscapeDropdown">
+        <option selected>Select a landscape!
+        </option>
+        <option value="forest" class="dropdown-item">Forest</option>
+        <option value="mountains" class="dropdown-item">Mountains</option>
+        <option value="beaches" class="dropdown-item">Beaches</option>
+        <option value="island" class="dropdown-item">Island</option>
+        <option value="jungle" class="dropdown-item">Jungle</option>
+
+      </select>
+
+      <div>
+        <button class="button is-success" id="generateButton">Generate</button>
+
+      </div>
+    </div>
+  </section>
+<br>
+  <section>
+    <div class="centered">
+      <div class="card card-shadow">
+        <div class="cardContent">
+        <p id="name" class="title centered"></p>
+        <p id="language" class="title is-5 centered"></p>
+        <div class="centered">
+          <img id="img" src="">
+        </div>
+        <div>
+          <h1 class="title centered" id="descriptionTitle"></h1>
+        </div>
+        <div class="centered">
+          <p class="centered" id="description"></p>
+        </div>
+        </div>
+        <div class="centered">
+          <iframe id="map" src="" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+        </div>
+        <br>
+      </div>
+    </div>
+  </section>
+<script src="indexscript.js"></script>
+  <footer>
+    <p class="centered"> Images taken from commons.wikimedia.org</p>
+    <p class="centered">Descriptions taken from tripadvisor.com</p>
+  </footer>
+</body>
+
+</html>
