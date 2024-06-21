@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Currency Exchange</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  
+</head>
+
+<body>
+  <section class="hero is-info is-small">
+    <div class="hero-body">
+      <p id="currencyTitle" class="title is-2 animate__animated animate__flip">
+        Around the World 
+      </p>
+      <p class = "title is-4 centered">Travel Guide</p>
+      <div class = "centered">
+        <!--    Buttons Here -->
+        
+        <a class="button is-info" href="index.html">Home</a>
+        <div class="divider"></div>
+        <a class="button is-info" href="currency.html">Currency</a>
+        <div class="divider"></div>
+        <a class="button is-info" href="faqPage.html">FAQ</a>
+
+
+      </div>
+    </div>
+  </section>
+  <br>
+  <section>
+    <p class = "title centered"> Currency Exchange </p>
+    <div id="centerImage">
+      
+      <figure>
+        <img id="worldImg" src="https://infoomni.com/wp-content/uploads/2022/06/IMF-demands-from-Pakistan-2022.jpg">
+      </figure>
+
+    </div>
+    <br>
+    <div class="centered">
+      <p class="title is-4">
+        Enter an amount:
+      </p>
+
+
+    </div>
+    <div class="centered">
+      <input id="amount" type="text" placeholder="amount">
+    </div>
+    <div class="centered">
+      <p class="title is-4">
+        Select two currencies:
+      </p>
+
+    </div>
+    <div class="container">
+      <div class="buttons is-centered">
+
+
+        <br>
+        <br>
+
+
+
+        <div class="select" >
+          <select id = "dropdown1">
+            <option disabled hidden selected> Select </option>
+            <option value="USD" class="dropdown-item">USD</option>
+            <option value="EUR" class="dropdown-item">EUR</option>
+            <option value="AUD" class="dropdown-item is-active">AUD</option>
+            <option value="JPY" class="dropdown-item">JPY</option>
+            <option value="GBP" class="dropdown-item">GBP</option>
+          </select>
+        </div>
+
+
+        <button id = "calculateButton" class="button is-danger">Calculate</button>
+       <div class="select" >
+          <select id = "dropdown2">
+            <option disabled hidden selected> Select </option>
+            <option value="USD" class="dropdown-item">USD</option>
+            <option value="EUR" class="dropdown-item">EUR</option>
+            <option value="AUD" class="dropdown-item is-active">AUD</option>
+            <option value="JPY" class="dropdown-item">JPY</option>
+            <option value="GBP" class="dropdown-item">GBP</option>
+          </select>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  <br>
+  <div class = "centered">
+    <p id = "exchangeInfo" class = "title is-5">
+      Exchange Info Will Appear Here!
+    </p>
+    </div>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
